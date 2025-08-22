@@ -23,3 +23,32 @@ This allows testing the system **without the hardware**.
 ```bash
 git clone https://github.com/ItumelenggK/anti-sleep-emulator.git
 cd anti-sleep-emulator
+
+### 2. Create a virtual environment (optional)
+```bash
+python -m venv venv
+venv\Scripts\activate      # Windows
+source venv/bin/activate   # Mac/Linux
+
+### 3. Install dependencies
+```bash
+pip install -r requirements.txt
+
+
+### 4. Run the Flask app
+```bash
+python app.py
+
+## Project Structure
+| File / Folder        | Purpose |
+|---------------------|---------|
+| `app.py`            | Main Flask application |
+| `requirements.txt`  | Python dependencies |
+| `README.md`         | Project description |
+
+## Next Steps
+- Replace dummy sensor data with real Arduino input via Bluetooth.
+- Add alerting for drowsiness detection.
+- Visualize sensor data and logs.
+- Optional: Connect to a mobile app for real-time status display.
+
